@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DB='/home/'$USER'/bin/testenota.txt'
+DB='/home/'$USER'/bin/nota.db'
 
 case $1 in
 	-l) echo "$(< $DB)" ; exit 0 ;;	
