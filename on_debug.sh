@@ -31,8 +31,8 @@ on_debug(){
         variaveisOnDebug="$(sort <<< "$variaveisOnDebug"$'\n'"$parametrosOnDebug" | uniq -d)"
     fi
     
-    for var in $variaveisOnDebug ; do
-        echo "$var=${!var}"-
+    for varOnDebug in $variaveisOnDebug ; do
+        echo "$varOnDebug=${!varOnDebug}"-
     done
     exit 0
 }
