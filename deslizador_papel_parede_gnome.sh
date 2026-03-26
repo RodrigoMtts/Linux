@@ -4,8 +4,8 @@
 # E-mail: rodrigo.matta.soares@gmail.com
 # 
 # Descrição: Comando para trocar o papel de parede em ambientes gnome. 
-# 					 Todos os papeis de paredes devem estar na pasta /home/$USER/Imagens/slide/
-# 					 Muito últil ao associar a teclas de atalhos.
+# 			 Todos os papeis de paredes devem estar na pasta /home/$USER/Imagens/slide/
+# 			 Muito últil ao associar a teclas de atalhos.
 #
 # Parametros obrigatórios: "+" ou "-"
 
@@ -32,8 +32,8 @@ for arq in $D_IMAGEM* ; do
     a_arqs[${#a_arqs[@]}]="$arq"
 done
 
-if [ ${#A_arqs[@]} -eq 0 ] ; then
-    echo "ERRO: O diretório $D_IMAGEM está vazio."
+if [ "${arqs[$posicao]}" = $D_IMAGEM'*' ] ; then
+    echo 'ERRO: O diretório '$D_IMAGEM' está vazio.'
     exit 1
 fi
 
